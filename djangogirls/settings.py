@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'djangogirls.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoGirls',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'USER': 'root',
         # 'PASSWORD': '8126',
         # 'HOST': 'localhost',
